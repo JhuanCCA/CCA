@@ -147,7 +147,7 @@ const BiddingForm: React.FC<BiddingFormProps> = ({ biddings = [], onSave }) => {
             </div>
             <InputField label="Categoria" name="categoria" value={formData.categoria} onChange={handleChange} />
             <InputField label="Resp. Técnico" name="responsavelTecnico" value={formData.responsavelTecnico} onChange={handleChange} />
-            <InputField label="Gestor Imediato" name="gestorImediato" value={formData.gestorImediate} onChange={handleChange} />
+            <InputField label="Gestor Imediato" name="gestorImediato" value={formData.gestorImediato} onChange={handleChange} />
           </div>
         </div>
 
@@ -237,18 +237,18 @@ const BiddingForm: React.FC<BiddingFormProps> = ({ biddings = [], onSave }) => {
               <div className="p-6 bg-gradient-to-br from-blue-600 to-blue-800 rounded-2xl text-white shadow-lg">
                 <span className="text-[10px] font-bold uppercase tracking-widest opacity-80">Lead Time Indicador</span>
                 <div className="text-3xl font-black mt-1">{formData.leadTimeIndicador} <span className="text-sm font-normal">Dias</span></div>
-                <p className="text-[10px] mt-2 opacity-60">(CCA > Resultado Final)</p>
+                <p className="text-[10px] mt-2 opacity-60">(CCA &gt; Resultado Final)</p>
               </div>
               <div className="p-6 bg-slate-50 rounded-2xl border border-slate-100">
-                <span className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Início > Disputa</span>
+                <span className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Início &gt; Disputa</span>
                 <div className="text-xl font-black text-slate-700 mt-1">{formData.diasInicioLicitacao} Dias</div>
               </div>
               <div className="p-6 bg-slate-50 rounded-2xl border border-slate-100">
-                <span className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">CCA > Pub.</span>
+                <span className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">CCA &gt; Pub.</span>
                 <div className="text-xl font-black text-slate-700 mt-1">{formData.diasInicioCCAPublicacao} Dias</div>
               </div>
               <div className="p-6 bg-slate-50 rounded-2xl border border-slate-100">
-                <span className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Pub. > Disputa</span>
+                <span className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Pub. &gt; Disputa</span>
                 <div className="text-xl font-black text-slate-700 mt-1">{formData.diasPublicacaoDisputa} Dias</div>
               </div>
             </div>
